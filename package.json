@@ -1,0 +1,22 @@
+{
+  "name": "stroll",
+  "version": "0.0.1",
+  "description": "recursively walk an object or array with async support",
+  "keywords": [],
+  "author": "Matthew Mueller <matt@lapwinglabs.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LapwingLabs/stroll.git"
+  },
+  "dependencies": {
+    "batch": "^0.5.2",
+    "foreach": "^2.0.5",
+    "is-object": "^1.0.1",
+    "wrapped": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "*"
+  },
+  "main": "index"
+}
