@@ -2,7 +2,7 @@
   "name": "stroll",
   "version": "1.0.0",
   "description": "recursively walk an object or array with async support",
-  "keywords": [],
+  "keywords": ["walk", "async", "recursive", "map"],
   "author": "Matthew Mueller <matt@lapwinglabs.com>",
   "repository": {
     "type": "git",
