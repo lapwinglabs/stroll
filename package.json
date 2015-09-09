@@ -1,6 +1,6 @@
 {
   "name": "stroll",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "recursively walk an object or array with async support",
   "keywords": [],
   "author": "Matthew Mueller <matt@lapwinglabs.com>",
