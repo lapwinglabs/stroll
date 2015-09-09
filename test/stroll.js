@@ -22,6 +22,9 @@ describe('objects', function() {
     }
 
     stroll(obj, function(v, k, next) {
+      v == 'a' && assert.equal(k, 'a')
+      v == 'e' && assert.equal(k, 'd.e')
+      v == 'd' && assert.equal(k, 'd')
       setTimeout(function() {
         next(null, v + v)
       }, 50)
@@ -181,6 +184,10 @@ describe('mixed', function() {
     }
 
     stroll(obj, function(v, k, next) {
+      v == 'b0' && assert.equal(k, 'b.0')
+      v == 'b1' && assert.equal(k, 'b.1')
+      v == 'f' && assert.equal(k, 'd.f')
+
       setTimeout(function() {
         next(null, v + ' ' + v)
       }, 50)
