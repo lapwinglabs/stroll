@@ -36,7 +36,7 @@ function stroll (value, fn, done, key) {
           if (err) return next(err)
           out[k] = value
           next()
-        }, k)
+        }, prop(key, k))
       })
     })
   } else if (is_array(value)) {
@@ -47,7 +47,7 @@ function stroll (value, fn, done, key) {
           if (err) return next(err)
           out[k] = value
           next()
-        }, k)
+        }, prop(key, k))
       })
     })
   } else {
@@ -79,4 +79,9 @@ function stroll (value, fn, done, key) {
   }
 
   return stroll
+}
+
+function prop (base, prop) {
+  if (!base) return prop
+  return base + '.' + prop
 }
